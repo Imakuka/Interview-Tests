@@ -19,7 +19,7 @@ namespace InterviewTesting
         private int _fibNumber;//This is _yourNumber from the list above - _yourNumber = _fibNumbers[_yourNumber]
 
         [Header("Is Fibonacci")]
-        private int _isFibonacci;
+        private int _isFibonacci;//Checking to see if this number is a Fibonacci number
 
 
         private void Start()
@@ -34,7 +34,7 @@ namespace InterviewTesting
             _fibNumbers.Add(a);
             _fibNumbers.Add(b);
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)//n = the number you want to find & how long the sequence is
             {
                 c = a + b;
                 a = b;
@@ -49,7 +49,7 @@ namespace InterviewTesting
         {
             _isFibonacci = _yourNumber;
 
-            if (IsFibonacci(_isFibonacci))
+            if (IsFibonacci(_isFibonacci))//Calls the method and gives it the number we want to check
             {
                 print("Is a Fibonacci");
             }
@@ -69,7 +69,6 @@ namespace InterviewTesting
             return IsPerfectSquare(5 * number * number + 4) || IsPerfectSquare(5 * number * number - 4); //This is known as recursion
             //Checks to see if the square root of the product of our equation above is a perfect square
         }
-
 
     }
 }
